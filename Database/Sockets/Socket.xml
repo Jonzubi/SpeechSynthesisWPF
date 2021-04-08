@@ -1,0 +1,38 @@
+<Root_Element>
+    <ProtocolSpecification>
+        <!-- TCP or UDP -->
+        <Protocol>UDP</Protocol>
+    </ProtocolSpecification>
+    <NodeTypeSpecification>
+        <!-- SERVER or CLIENT (Relevant for TCP, ignored for UDP) -->
+        <NodeType>CLIENT</NodeType>
+    </NodeTypeSpecification>
+    <LocalPortSpecification>
+        <!-- Local port number (1025 - 65535) -->
+        <LocalPort>20030</LocalPort>
+    </LocalPortSpecification>
+    <RemotePortSpecification>
+        <!-- Remote port number (1025 - 65535) -->
+        <RemotePort>20004</RemotePort>
+    </RemotePortSpecification>
+    <RemoteIpAddressSpecification>
+        <!-- Remote IP Address (point notation; maximum 15 characters) -->
+        <RemoteIpAddress>127.0.0.1</RemoteIpAddress>
+    </RemoteIpAddressSpecification>
+    <BlockSpecification>
+        <!-- true for blocking, false for non-blocking -->
+        <BlockingMode>false</BlockingMode>
+    </BlockSpecification>
+    <BufferSpecification>
+        <!-- Maximum size of message to be received (number of bytes) -->
+        <IncomingMessageMaximumSize>524288</IncomingMessageMaximumSize>
+        <!-- Maximum size of message to be sent (number of bytes) -->
+        <OutgoingMessageMaximumSize>524288</OutgoingMessageMaximumSize>
+        <!-- Size of buffer for incoming data (number of bytes) -->
+        <ReceptionBuffer>524288</ReceptionBuffer>
+        <!-- Size of buffer for outgoing data (number of bytes) -->
+        <SendingBuffer>524288</SendingBuffer>
+        <!-- Activation of TCP_NODELAY option (true for activation, false for deactivation) (Relevant only for TCP sending tasks) -->
+        <TCPNODELAY>true</TCPNODELAY>
+    </BufferSpecification>
+</Root_Element>
