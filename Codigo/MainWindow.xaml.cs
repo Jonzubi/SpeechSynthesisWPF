@@ -40,7 +40,7 @@ namespace SpeechSynthesisWPF
         private void btnSpeak_Click(object sender, RoutedEventArgs e)
         {
             m_Synthesizer.SelectVoice(cmbVoices.SelectedItem.ToString());
-            m_Synthesizer.Speak(txtSpeach.Text);
+            m_Synthesizer.SpeakAsync(txtSpeach.Text);
         }
 
     }
